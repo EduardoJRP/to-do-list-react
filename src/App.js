@@ -37,10 +37,12 @@ function App() {
 
   return (
     <div className="App">
-      <h1 className="title"> Todo List </h1>
+      <header className='title-background'>
+        <h1 className="title"> Todo List </h1>
+      </header>
       <div className="addTask">
-        <input onChange={handleChange}/>
-        <button onClick={addTask}> Add Task </button>
+        <input className="todo-input" onChange={handleChange}/>
+        <button className="add-todo" onClick={addTask}> Add Task </button>
       </div>
       <div className="list">
         {list.map((todo) => {
